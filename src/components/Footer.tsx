@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
-
 export default function Footer() {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container-proshoe py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -19,10 +17,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Desde [AÑO] impulsando marcas de calzado con procesos estandarizados, 
-              control de calidad superior y cumplimiento garantizado.
-            </p>
+            <p className="text-primary-foreground/80 text-sm leading-relaxed">Desde 1990 impulsando marcas de calzado con procesos estandarizados, control de calidad superior y cumplimiento garantizado.</p>
           </div>
 
           {/* Quick Links */}
@@ -64,8 +59,8 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <p>PÓRTICO 109, BRISAS DEL CAMPO INDUSTRIAL</p>
-                  <p>37297 LEÓN, GUANAJUATO</p>
+                  <p>Pórtico ciento nueve, Brisas del Campo Industrial.</p>
+                  <p>37297 León, Guanajuato.</p>
                   <p>México</p>
                 </div>
               </div>
@@ -88,25 +83,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-montserrat font-semibold mb-4">Síguenos</h4>
             <div className="flex space-x-4 mb-6">
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="#" className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="#" className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -115,11 +98,7 @@ export default function Footer() {
                 Manténgase actualizado con nuestras novedades
               </p>
               <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Su email"
-                  className="flex-1 px-3 py-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded-l-lg text-sm text-primary-foreground placeholder-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent"
-                />
+                <input type="email" placeholder="Su email" className="flex-1 px-3 py-2 bg-primary-foreground/10 border border-primary-foreground/20 rounded-l-lg text-sm text-primary-foreground placeholder-primary-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent" />
                 <button className="px-4 py-2 bg-accent text-accent-foreground rounded-r-lg hover:bg-accent/90 transition-colors text-sm font-medium">
                   Suscribir
                 </button>
@@ -145,6 +124,5 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
