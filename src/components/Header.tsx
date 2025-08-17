@@ -3,16 +3,16 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const navigation = [{
-  name: 'Nuestra Historia',
+  name: 'Historia',
   href: '/'
 }, {
-  name: 'Nuestra Empresa',
+  name: 'Empresa',
   href: '/nuestra-empresa'
 }, {
   name: 'Servicios',
   href: '/servicios'
 }, {
-  name: 'Nuestros Compromisos',
+  name: 'Compromisos',
   href: '/nuestros-compromisos'
 }, {
   name: 'Clientes',
@@ -35,7 +35,7 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="PROSHOE" 
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
