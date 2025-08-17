@@ -31,16 +31,12 @@ export default function Header() {
       <div className="container-proshoe">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-accent p-2 rounded-lg">
-              <span className="text-accent-foreground font-montserrat font-bold text-xl">P</span>
-            </div>
-            <div>
-              <h1 className="text-2xl font-montserrat font-bold text-primary-foreground">
-                PROSHOE
-              </h1>
-              
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="PROSHOE" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
