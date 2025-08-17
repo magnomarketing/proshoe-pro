@@ -97,12 +97,7 @@ export default function Clientes() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {clientLogos.map((client, index) => (
               <Card key={index} className="service-card text-center hover:shadow-xl transition-all duration-300 group">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
-                  <span className="text-2xl font-montserrat font-bold text-accent">
-                    {client.name.charAt(0)}
-                  </span>
-                </div>
-                <h3 className="font-montserrat font-semibold text-foreground mb-2">
+                <h3 className="font-montserrat font-semibold text-foreground mb-2 text-lg">
                   {client.name}
                 </h3>
                 <p className="text-muted-foreground text-sm">
