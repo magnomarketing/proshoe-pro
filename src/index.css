@@ -1,42 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* PROSHOE Design System - Maquila y Fabricación de Calzado */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* PROSHOE Brand Colors */
+    --brand-primary: 359 31% 15%;        /* #311A1B - Marrón corporativo */
+    --brand-secondary: 40 8% 83%;        /* #D5D4D2 - Gris claro */
+    --brand-accent: 45 95% 55%;          /* Amarillo vibrante */
+    --brand-light: 212 33% 97%;          /* #F5F7FA - Fondo claro */
+    --brand-ui: 220 13% 91%;             /* #E5E7EB - Gris UI */
+    --brand-text: 225 41% 12%;           /* #111827 - Texto principal */
+    --brand-text-secondary: 212 13% 34%; /* #4B5563 - Texto secundario */
+    
+    /* System Mappings */
+    --background: var(--brand-light);
+    --foreground: var(--brand-text);
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: var(--brand-text);
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    --popover-foreground: var(--brand-text);
+    
+    --primary: var(--brand-primary);
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: var(--brand-secondary);
+    --secondary-foreground: var(--brand-primary);
+    
+    --muted: var(--brand-ui);
+    --muted-foreground: var(--brand-text-secondary);
+    
+    --accent: var(--brand-accent);
+    --accent-foreground: var(--brand-primary);
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    --border: var(--brand-ui);
+    --input: var(--brand-ui);
+    --ring: var(--brand-primary);
+    
+    --radius: 0.75rem;
+    
+    /* Custom Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(359 31% 25%));
+    --card-shadow: 0 4px 12px -2px hsl(var(--brand-primary) / 0.08);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +115,102 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-semibold;
+  }
+}
+
+@layer components {
+  /* Hero Components */
+  .hero-section {
+    @apply bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground;
+  }
+  
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat tracking-tight;
+  }
+  
+  .hero-subtitle {
+    @apply text-lg md:text-xl text-primary-foreground/90 font-inter;
+  }
+  
+  /* Card Components */
+  .proshoe-card {
+    @apply bg-card rounded-xl border border-border/50 p-6 shadow-sm 
+           hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .service-card {
+    @apply bg-white rounded-xl p-8 shadow-md border border-border/30
+           hover:shadow-xl hover:border-accent/20 transition-all duration-300;
+  }
+  
+  /* Timeline Components */
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-accent/30 last:border-l-0;
+  }
+  
+  .timeline-dot {
+    @apply absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full border-4 border-background;
+  }
+  
+  /* Navigation */
+  .nav-link {
+    @apply text-sm font-medium text-primary-foreground/90 hover:text-primary-foreground
+           transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 
+           after:w-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300
+           hover:after:w-full;
+  }
+  
+  .nav-link-active {
+    @apply text-primary-foreground after:w-full;
+  }
+  
+  /* Buttons */
+  .btn-cta {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 
+           font-semibold px-8 py-3 rounded-lg transition-all duration-200
+           hover:shadow-lg hover:-translate-y-0.5 focus:ring-2 focus:ring-accent/50;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground
+           font-medium px-6 py-2 rounded-lg transition-all duration-200
+           focus:ring-2 focus:ring-primary/50;
+  }
+  
+  /* Form Elements */
+  .form-input {
+    @apply w-full px-4 py-3 border border-border rounded-lg 
+           focus:ring-2 focus:ring-primary/50 focus:border-primary
+           transition-colors duration-200 bg-white;
+  }
+  
+  .form-label {
+    @apply text-sm font-medium text-foreground mb-2 block;
+  }
+  
+  /* Utilities */
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+  
+  .container-proshoe {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .metric-card {
+    @apply text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20;
+  }
+  
+  .breadcrumb {
+    @apply flex items-center space-x-2 text-sm text-muted-foreground mb-8;
   }
 }

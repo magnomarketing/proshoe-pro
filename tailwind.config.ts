@@ -18,7 +18,22 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
+				// Brand colors
+				'brand-primary': 'hsl(var(--brand-primary))',
+				'brand-secondary': 'hsl(var(--brand-secondary))',
+				'brand-accent': 'hsl(var(--brand-accent))',
+				'brand-light': 'hsl(var(--brand-light))',
+				'brand-ui': 'hsl(var(--brand-ui))',
+				'brand-text': 'hsl(var(--brand-text))',
+				'brand-text-secondary': 'hsl(var(--brand-text-secondary))',
+				
+				// System colors
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
