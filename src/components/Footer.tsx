@@ -7,15 +7,12 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="bg-accent p-2 rounded-lg">
-                <span className="text-accent-foreground font-montserrat font-bold text-xl">P</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-bold">PROSHOE</h3>
-                <p className="text-sm text-primary-foreground/80">
-                  Maquila y fabricación de calzado con calidad y cumplimiento
-                </p>
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="PROSHOE" 
+                className="h-20 w-auto"
+              />
+              
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">Desde 1990 impulsando marcas de calzado con procesos estandarizados, control de calidad superior y cumplimiento garantizado.</p>
           </div>

@@ -35,7 +35,7 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="PROSHOE" 
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
@@ -46,17 +46,20 @@ export default function Header() {
               </Link>)}
           </nav>
 
-          {/* Contact Info & CTA */}
+                    {/* Contact Info & CTA */}
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-4 text-primary-foreground/80 text-sm">
-              
-              <div className="flex items-center space-x-1">
-                <Mail className="w-4 h-4" />
-                <span>email@tudominio.com</span>
-              </div>
+              <a href="tel:+524777712963" className="flex items-center space-x-1 hover:text-accent transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>+52 477 771 2963</span>
+              </a>
+              {/* <div className="flex items-center space-x-1">
+                  <Mail className="w-4 h-4" />
+                  <span>email@tudominio.com</span>
+                </div> */}
             </div>
             <Link to="/contactanos">
-              <Button className="btn-cta">
+              <Button className="bg-[#F5F7FA] text-gray-800 hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg border border-gray-300 hover:border-gray-400">
                 Solicitar Cotización
               </Button>
             </Link>
@@ -78,7 +81,7 @@ export default function Header() {
                 </Link>)}
               <div className="pt-4 border-t border-primary-foreground/20">
                 <Link to="/contactanos" onClick={() => setMobileMenuOpen(false)}>
-                  <Button className="btn-cta w-full">
+                  <Button className="bg-[#F5F7FA] text-gray-800 hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg border border-gray-300 hover:border-gray-400 w-full">
                     Solicitar Cotización
                   </Button>
                 </Link>

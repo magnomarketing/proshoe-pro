@@ -10,34 +10,39 @@ import teamImage from '@/assets/craftsmanship-team.jpg';
 
 const timelineEvents = [
   {
-    year: '[AÑO - 25]',
-    title: 'Fundación de la empresa',
-    description: 'Inicio de operaciones con enfoque en maquila de calzado de calidad para el mercado nacional.'
+    year: '1979',
+    title: 'Fundación de PROSHOE S.A. DE C.V.',
+    description: 'Nace PROSHOE S.A. DE C.V. con una producción inicial de 90 pares diarios de calzado para bebé.'
   },
   {
-    year: '[AÑO - 18]',
-    title: 'Expansión de capacidad',
-    description: 'Ampliación de planta e incorporación de nueva maquinaria especializada.'
+    year: '1981',
+    title: 'Expansión de producción y líneas',
+    description: 'Aumento de producción a 250 pares diarios y desarrollo de nuevas líneas y estilos para el mercado de bebé.'
   },
   {
-    year: '[AÑO - 12]',
-    title: 'Certificaciones de calidad',
-    description: 'Obtención de certificaciones internacionales y implementación de sistemas de gestión.'
+    year: '1990',
+    title: 'Diversificación a calzado infantil',
+    description: 'Inicio de fabricación de calzado para niños, vendido en principales Boutiques, Cadenas Departamentales y Zapaterías de la República Mexicana. Producción de 500 pares diarios.'
   },
   {
-    year: '[AÑO - 8]',
-    title: 'Mercados internacionales',
-    description: 'Inicio de exportaciones y establecimiento de alianzas comerciales en EE.UU.'
+    year: '1996',
+    title: 'Inicio de servicios de Maquila',
+    description: 'Nueva visión empresarial: maquila de zapato de guante, pegado y sandalias para dama. Producción de 1,000 pares diarios.'
   },
   {
-    year: '[AÑO - 3]',
-    title: 'Digitalización de procesos',
-    description: 'Implementación de tecnología avanzada para optimización y trazabilidad.'
+    year: '1999',
+    title: 'Inauguración de nueva planta',
+    description: 'Inversión en infraestructura competitiva. Inauguración del edificio en Pórtico 109, Colonia Brisas del Campo Industrial.'
   },
   {
-    year: '[AÑO ACTUAL]',
-    title: 'Liderazgo consolidado',
-    description: 'Posicionamiento como referente en maquila de calzado con estándares internacionales.'
+    year: '2009',
+    title: 'Certificación ISO 9001:2008',
+    description: 'Acreditación BSI como "Empresa Certificada en la Norma ISO 9001:2008". Inicio de exportaciones a Estados Unidos y Canadá con calzado tipo "Opanka".'
+  },
+  {
+    year: '2010 - Actualidad',
+    title: 'Liderazgo en exportación',
+    description: 'Producción actual de 2,800 pares diarios de botas, zapatillas y sandalias para dama y caballero. Exportación a mercados exigentes como Estados Unidos, Japón y Canadá.'
   }
 ];
 
@@ -60,8 +65,8 @@ const capabilities = [
 ];
 
 const metrics = [
-  { value: '15000', label: 'Pares por semana', icon: <Truck className="w-6 h-6" /> },
-  { value: '100$', label: 'enfocados a productividad', icon: <CheckCircle className="w-6 h-6" /> },
+  { value: '15,000', label: 'Capcidad de pares por semana', icon: <Truck className="w-6 h-6" /> },
+  { value: '100%', label: 'Orientados a la productividad', icon: <CheckCircle className="w-6 h-6" /> },
   { value: '60+', label: 'Clientes activos', icon: <Users className="w-6 h-6" /> },
   { value: '5', label: 'Países de exportación', icon: <Globe className="w-6 h-6" /> }
 ];
@@ -98,7 +103,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link to="/servicios">
-                <Button variant="outline" className="text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4">
+                <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4">
                   Ver Servicios
                 </Button>
               </Link>
@@ -123,6 +128,35 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="section-padding bg-brand-light">
+        <div className="container-proshoe">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
+                Conoce Nuestra Historia
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Descubre cómo hemos crecido y evolucionado para convertirnos en líderes de la industria del calzado.
+              </p>
+            </div>
+            
+            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/n_KRE9NJX7E?start=2"
+                title="Historia de PROSHOE - Nuestra Trayectoria"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>

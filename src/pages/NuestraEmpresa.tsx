@@ -195,54 +195,7 @@ export default function NuestraEmpresa() {
         </div>
       </section>
 
-      {/* Numbers Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-proshoe">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4">
-              Cifras que Respaldan Nuestra Experiencia
-            </h2>
-            <p className="text-xl text-primary-foreground/90">
-              Resultados tangibles de nuestro compromiso con la excelencia
-            </p>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                [XX]+
-              </div>
-              <div className="text-primary-foreground/80">
-                Años de experiencia
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                [XXX]+
-              </div>
-              <div className="text-primary-foreground/80">
-                Proyectos completados
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                [X.X]M
-              </div>
-              <div className="text-primary-foreground/80">
-                Pares producidos
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                99%
-              </div>
-              <div className="text-primary-foreground/80">
-                Satisfacción del cliente
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 }

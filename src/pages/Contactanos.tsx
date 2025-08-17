@@ -334,8 +334,8 @@ export default function Contactanos() {
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Dirección</h4>
                       <p className="text-muted-foreground text-sm">
-                        PÓRTICO 109, BRISAS DEL CAMPO INDUSTRIAL<br />
-                        37297 LEÓN, GUANAJUATO<br />
+                      Pórtico ciento nueve, Brisas del Campo Industrial.<br />
+                      37297 León, Guanajuato.<br />
                         México
                       </p>
                     </div>
@@ -379,32 +379,36 @@ export default function Contactanos() {
                 </div>
               </Card>
 
-              {/* Map Placeholder */}
+              {/* Map */}
               <Card className="service-card">
                 <h3 className="text-xl font-montserrat font-bold text-foreground mb-4">
                   Ubicación
                 </h3>
-                <div className="aspect-video bg-gradient-to-br from-brand-ui to-brand-secondary rounded-lg flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <MapPin className="w-12 h-12 mx-auto mb-2 text-accent" />
-                    <p className="text-sm">Mapa interactivo</p>
-                    <p className="text-xs">Ubicación de PROSHOE</p>
-                  </div>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.5!2d-101.6777!3d21.1225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b3b6b3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sP%C3%B3rtico+109%2C+Brisas+del+Campo+Industrial%2C+37297+Le%C3%B3n%2C+Gto.%2C+M%C3%A9xico!5e0!3m2!1ses!2smx!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Ubicación de PROSHOE - León, Guanajuato"
+                  ></iframe>
+                </div>
+                <div className="mt-4 text-center">
+                  <a 
+                    href="https://maps.google.com/?q=P%C3%B3rtico+109,+Brisas+del+Campo+Industrial,+37297+Le%C3%B3n,+Gto.,+M%C3%A9xico" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                  >
+                    Ver en Google Maps →
+                  </a>
                 </div>
               </Card>
 
-              {/* Response Time */}
-              <div className="bg-accent/10 rounded-lg p-6">
-                <div className="flex items-center space-x-3 mb-3">
-                  <Clock className="w-6 h-6 text-accent" />
-                  <h4 className="font-semibold text-foreground">Tiempo de Respuesta</h4>
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Nos comprometemos a responder todas las consultas dentro de las 
-                  próximas 24 horas hábiles. Para urgencias, puede contactarnos 
-                  directamente vía telefónica.
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
