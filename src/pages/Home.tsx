@@ -60,10 +60,10 @@ const capabilities = [
 ];
 
 const metrics = [
-  { value: '[X,XXX]', label: 'Pares por semana', icon: <Truck className="w-6 h-6" /> },
-  { value: '98%', label: 'Cumplimiento on-time', icon: <CheckCircle className="w-6 h-6" /> },
-  { value: '[XX]+', label: 'Clientes activos', icon: <Users className="w-6 h-6" /> },
-  { value: '2', label: 'Países de exportación', icon: <Globe className="w-6 h-6" /> }
+  { value: '15000', label: 'Pares por semana', icon: <Truck className="w-6 h-6" /> },
+  { value: '100$', label: 'enfocados a productividad', icon: <CheckCircle className="w-6 h-6" /> },
+  { value: '60+', label: 'Clientes activos', icon: <Users className="w-6 h-6" /> },
+  { value: '5', label: 'Países de exportación', icon: <Globe className="w-6 h-6" /> }
 ];
 
 export default function Home() {
@@ -83,7 +83,7 @@ export default function Home() {
         <div className="relative container-proshoe section-padding">
           <div className="max-w-4xl">
             <h1 className="hero-title mb-6">
-              Desde <span className="text-accent">[AÑO]</span> impulsando 
+              Desde <span className="text-accent">1990</span> impulsando 
               <br />marcas de calzado
             </h1>
             <p className="hero-subtitle mb-8 max-w-2xl">
