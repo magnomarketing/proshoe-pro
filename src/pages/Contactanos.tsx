@@ -334,8 +334,8 @@ export default function Contactanos() {
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Dirección</h4>
                       <p className="text-muted-foreground text-sm">
-                        [Calle, Colonia]<br />
-                        [CP, Ciudad, Estado]<br />
+                        PÓRTICO 109, BRISAS DEL CAMPO INDUSTRIAL<br />
+                        37297 LEÓN, GUANAJUATO<br />
                         México
                       </p>
                     </div>
@@ -347,7 +347,7 @@ export default function Contactanos() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Teléfono</h4>
-                      <p className="text-muted-foreground text-sm">+52 (XXX) XXX XXXX</p>
+                      <p className="text-muted-foreground text-sm">+52 (477) 7712963</p>
                     </div>
                   </div>
 
@@ -357,7 +357,10 @@ export default function Contactanos() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                      <p className="text-muted-foreground text-sm">email@tudominio.com</p>
+                      <p className="text-muted-foreground text-sm">
+                        ventas@proshoe.com.mx<br />
+                        info@proshoe.com.mx
+                      </p>
                     </div>
                   </div>
 

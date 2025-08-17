@@ -64,18 +64,18 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <p>[Calle, Colonia]</p>
-                  <p>[CP, Ciudad, Estado]</p>
+                  <p>PÓRTICO 109, BRISAS DEL CAMPO INDUSTRIAL</p>
+                  <p>37297 LEÓN, GUANAJUATO</p>
                   <p>México</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">+52 (XXX) XXX XXXX</span>
+                <span className="text-primary-foreground/80 text-sm">+52 (477) 7712963</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">email@tudominio.com</span>
+                <span className="text-primary-foreground/80 text-sm">ventas@proshoe.com.mx</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-accent flex-shrink-0" />

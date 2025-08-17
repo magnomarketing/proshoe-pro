@@ -203,15 +203,15 @@ export default function Clientes() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                98%
+                100%
               </div>
               <div className="text-primary-foreground/80">
-                Satisfacción del cliente
+                enfocados en la Satisfacción del cliente
               </div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                [XX]+
+                15
               </div>
               <div className="text-primary-foreground/80">
                 Clientes activos
@@ -227,7 +227,7 @@ export default function Clientes() {
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-montserrat font-bold text-accent mb-2">
-                [X]
+                6
               </div>
               <div className="text-primary-foreground/80">
                 Países servidos
