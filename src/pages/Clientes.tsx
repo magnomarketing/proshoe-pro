@@ -27,14 +27,22 @@ const testimonials = [
 ];
 
 const clientLogos = [
-  { name: 'Cliente Premium A', category: 'Calzado Formal' },
-  { name: 'Cliente Premium B', category: 'Calzado Deportivo' },
-  { name: 'Cliente Premium C', category: 'Calzado Casual' },
-  { name: 'Cliente Premium D', category: 'Calzado Infantil' },
-  { name: 'Cliente Premium E', category: 'Botas Industriales' },
-  { name: 'Cliente Premium F', category: 'Calzado Femenino' },
-  { name: 'Cliente Premium G', category: 'Calzado Ejecutivo' },
-  { name: 'Cliente Premium H', category: 'Calzado Outdoor' }
+  { name: 'Flexi', category: 'Calzado Casual' },
+  { name: 'HH Brown', category: 'Calzado Premium' },
+  { name: 'Born', category: 'Calzado Artesanal' },
+  { name: 'Hot Chocolate Design', category: 'Calzado Femenino' },
+  { name: 'Piel y Madera', category: 'Calzado Artesanal' },
+  { name: 'Coqueta', category: 'Calzado Infantil' },
+  { name: 'Bambino', category: 'Calzado Infantil' },
+  { name: 'Vavito', category: 'Calzado Casual' },
+  { name: 'Tempe', category: 'Calzado Deportivo' },
+  { name: 'Court', category: 'Calzado Deportivo' },
+  { name: 'Kínder', category: 'Calzado Infantil' },
+  { name: 'Julio de Mucha', category: 'Calzado Formal' },
+  { name: 'Comando', category: 'Calzado Industrial' },
+  { name: 'Olukay', category: 'Calzado Casual' },
+  { name: 'Carlo Rossetti', category: 'Calzado Ejecutivo' },
+  { name: 'My Mayu', category: 'Calzado Femenino' }
 ];
 
 const achievements = [
