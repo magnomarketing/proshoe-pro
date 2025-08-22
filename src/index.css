@@ -9,7 +9,7 @@
 @layer base {
   :root {
     /* PROSHOE Brand Colors */
-    --brand-primary: 359 31% 15%;        /* #311A1B - Marrón corporativo */
+    --brand-primary: 0 100% 14%;         /* #460000 - Rojo oscuro */
     --brand-secondary: 40 8% 83%;        /* #D5D4D2 - Gris claro */
     --brand-accent: 45 95% 55%;          /* Amarillo vibrante */
     --brand-light: 212 33% 97%;          /* #F5F7FA - Fondo claro */
