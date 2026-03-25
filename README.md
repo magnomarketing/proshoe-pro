@@ -2,7 +2,7 @@
 
 ## Project info
 
-Proshoe Pro - Aplicación web para gestión de calzado profesional.
+Proshoe Pro - Pagina web para gestión de calzado profesional.
 
 ## How can I edit this code?
 
