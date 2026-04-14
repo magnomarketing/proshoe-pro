@@ -84,7 +84,7 @@ export default function Clientes() {
       {/* Client Logos Grid */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Marcas que Confían en Nosotros
             </h2>
@@ -120,7 +120,7 @@ export default function Clientes() {
       {/* Testimonials */}
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Lo que Dicen Nuestros Clientes
             </h2>
@@ -162,7 +162,7 @@ export default function Clientes() {
       {/* Achievements */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Reconocimientos y Logros
             </h2>
@@ -191,7 +191,7 @@ export default function Clientes() {
       {/* Success Metrics */}
       <section className="section-padding bg-primary text-primary-foreground">
         <div className="container-proshoe">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-4">
               Resultados que Respaldan Nuestra Excelencia
             </h2>

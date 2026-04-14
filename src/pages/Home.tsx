@@ -104,13 +104,17 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay-3">
               <Link to="/contactanos">
-                <Button className="btn-cta text-base px-8 py-4">
+                <Button
+                  className="!bg-accent !text-accent-foreground hover:!bg-accent/90 font-semibold text-base px-8 py-4 rounded-lg shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                >
                   Solicitar Cotización
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
               <Link to="/servicios">
-                <Button variant="outline" className="text-primary-foreground border-primary-foreground/40 hover:bg-primary-foreground/10 hover:border-primary-foreground text-base px-8 py-4 rounded-lg transition-all duration-200">
+                <Button
+                  className="!bg-white !text-primary hover:!bg-white/90 font-semibold text-base px-8 py-4 rounded-lg transition-all duration-200 shadow-md"
+                >
                   Ver Servicios
                 </Button>
               </Link>
@@ -144,7 +148,7 @@ export default function Home() {
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-6">
               <div className="section-divider mx-auto"></div>
               <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
                 Conoce Nuestra Historia
@@ -173,7 +177,7 @@ export default function Home() {
       {/* Timeline Section */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <div className="section-divider mx-auto"></div>
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestra Trayectoria
@@ -213,7 +217,7 @@ export default function Home() {
       {/* Capabilities Section */}
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <div className="section-divider mx-auto"></div>
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestras Capacidades
@@ -224,7 +228,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {capabilities.map((capability, index) => (
               <Card key={index} className="service-card text-center">
                 <div className="mb-6">{capability.icon}</div>
@@ -342,7 +346,7 @@ export default function Home() {
             de maquila especializada y cumplimiento guaranteed.
           </p>
           <Link to="/contactanos">
-            <Button className="btn-cta text-lg px-8 py-4">
+            <Button className="!bg-accent !text-accent-foreground hover:!bg-accent/90 font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:-translate-y-0.5 transition-all duration-200">
               Solicitar Cotización Gratuita
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

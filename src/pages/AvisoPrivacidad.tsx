@@ -33,7 +33,7 @@ export default function AvisoPrivacidad() {
         <div className="container-proshoe">
           <div className="max-w-4xl mx-auto">
             {/* Download Section */}
-            <Card className="service-card mb-12">
+            <Card className="service-card mb-6">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">

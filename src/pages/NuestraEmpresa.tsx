@@ -57,7 +57,7 @@ export default function NuestraEmpresa() {
       {/* About Us */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-10">
             <div>
               <h2 className="text-3xl font-montserrat font-bold text-foreground mb-6">
                 Quiénes Somos
@@ -106,7 +106,7 @@ export default function NuestraEmpresa() {
           </div>
 
           {/* Mission & Vision */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             <Card className="service-card">
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -143,7 +143,7 @@ export default function NuestraEmpresa() {
       {/* Strengths */}
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestras Fortalezas
             </h2>
@@ -173,7 +173,7 @@ export default function NuestraEmpresa() {
       <section className="section-padding bg-background">
         <div className="container-proshoe">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
                 Infraestructura
               </h2>

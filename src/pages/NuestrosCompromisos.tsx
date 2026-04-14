@@ -74,7 +74,7 @@ export default function NuestrosCompromisos() {
       {/* Quality Policy */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Política de Calidad
             </h2>
@@ -106,7 +106,7 @@ export default function NuestrosCompromisos() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Collaborators */}
             <div>
-              <div className="text-center mb-12">
+              <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-10 h-10 text-accent" />
                 </div>
@@ -131,7 +131,7 @@ export default function NuestrosCompromisos() {
 
             {/* Clients */}
             <div>
-              <div className="text-center mb-12">
+              <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Shield className="w-10 h-10 text-accent" />
                 </div>
@@ -160,7 +160,7 @@ export default function NuestrosCompromisos() {
       {/* Certifications */}
       <section className="section-padding bg-background">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Certificaciones y Auditorías
             </h2>

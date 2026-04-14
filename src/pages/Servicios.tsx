@@ -111,7 +111,7 @@ export default function Servicios() {
       {/* Process Section */}
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestro Proceso
             </h2>
