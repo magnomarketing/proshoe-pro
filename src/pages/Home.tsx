@@ -65,7 +65,7 @@ const capabilities = [
 ];
 
 const metrics = [
-  { value: '15,000', label: 'Capcidad de pares por semana', icon: <Truck className="w-6 h-6" /> },
+  { value: '15,000', label: 'Capacidad de pares por semana', icon: <Truck className="w-6 h-6" /> },
   { value: '100%', label: 'Orientados a la productividad', icon: <CheckCircle className="w-6 h-6" /> },
   { value: '60+', label: 'Clientes activos', icon: <Users className="w-6 h-6" /> },
   { value: '5', label: 'Países de exportación', icon: <Globe className="w-6 h-6" /> }
