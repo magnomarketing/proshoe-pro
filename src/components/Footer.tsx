@@ -108,7 +108,7 @@ export default function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/80 text-sm">
-              © 2024 PROSHOE. Todos los derechos reservados.
+              © {new Date().getFullYear()} PROSHOE S.A. de C.V. Todos los derechos reservados.
             </div>
             <div className="flex space-x-6 text-sm">
               <Link to="/aviso-de-privacidad" className="text-primary-foreground/80 hover:text-accent transition-colors">

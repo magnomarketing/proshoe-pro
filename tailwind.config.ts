@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'montserrat': ['Montserrat', 'sans-serif'],
+				'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
 				'inter': ['Inter', 'sans-serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},

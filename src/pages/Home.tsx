@@ -77,33 +77,40 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={heroImage} 
-            alt="Línea de producción de calzado PROSHOE" 
-            className="w-full h-full object-cover opacity-20"
+          <img
+            src={heroImage}
+            alt="Línea de producción de calzado PROSHOE"
+            className="w-full h-full object-cover opacity-15"
+            loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/60"></div>
         </div>
-        
+
         <div className="relative container-proshoe section-padding">
           <div className="max-w-4xl">
-            <h1 className="hero-title mb-6">
-              Desde <span className="text-accent">1990</span> impulsando 
-              <br />marcas de calzado
+            {/* Trust badge */}
+            <div className="animate-slide-up inline-flex items-center gap-2 bg-accent/15 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <span className="text-accent text-xs font-semibold tracking-widest uppercase">ISO 9001 Certificados</span>
+            </div>
+
+            <h1 className="hero-title mb-6 animate-slide-up-delay-1">
+              Fabricamos calzado de<br />
+              <span className="text-accent">clase mundial</span> desde 1979
             </h1>
-            <p className="hero-subtitle mb-8 max-w-2xl">
-              Especializados en maquila y fabricación de calzado con los más altos estándares 
-              de calidad, cumplimiento garantizado y procesos certificados para el mercado nacional e internacional.
+            <p className="hero-subtitle mb-8 max-w-2xl animate-slide-up-delay-2">
+              Maquila y fabricación de calzado con estándares internacionales.
+              Exportamos a EE.UU., Japón y Canadá — 2,800 pares diarios.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay-3">
               <Link to="/contactanos">
-                <Button className="btn-cta text-lg px-8 py-4">
+                <Button className="btn-cta text-base px-8 py-4">
                   Solicitar Cotización
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
               <Link to="/servicios">
-                <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4">
+                <Button variant="outline" className="text-primary-foreground border-primary-foreground/40 hover:bg-primary-foreground/10 hover:border-primary-foreground text-base px-8 py-4 rounded-lg transition-all duration-200">
                   Ver Servicios
                 </Button>
               </Link>
@@ -112,18 +119,18 @@ export default function Home() {
         </div>
 
         {/* Metrics Section */}
-        <div className="relative bg-primary-foreground/10 backdrop-blur-sm border-t border-primary-foreground/20">
-          <div className="container-proshoe py-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="relative border-t border-primary-foreground/15">
+          <div className="container-proshoe py-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 animate-scale-in">
               {metrics.map((metric, index) => (
                 <div key={index} className="metric-card">
                   <div className="flex items-center justify-center mb-3 text-accent">
                     {metric.icon}
                   </div>
-                  <div className="text-2xl md:text-3xl font-montserrat font-bold text-primary-foreground mb-1">
+                  <div className="text-2xl md:text-3xl font-montserrat font-black text-primary-foreground mb-1">
                     {metric.value}
                   </div>
-                  <div className="text-sm text-primary-foreground/80">
+                  <div className="text-xs md:text-sm text-primary-foreground/75 leading-tight">
                     {metric.label}
                   </div>
                 </div>
@@ -138,6 +145,7 @@ export default function Home() {
         <div className="container-proshoe">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
+              <div className="section-divider mx-auto"></div>
               <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
                 Conoce Nuestra Historia
               </h2>
@@ -166,11 +174,12 @@ export default function Home() {
       <section className="section-padding bg-background">
         <div className="container-proshoe">
           <div className="text-center mb-16">
+            <div className="section-divider mx-auto"></div>
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestra Trayectoria
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Más de dos décadas construyendo relaciones sólidas y desarrollando capacidades 
+              Más de cuatro décadas construyendo relaciones sólidas y desarrollando capacidades
               que nos posicionan como líderes en maquila de calzado.
             </p>
           </div>
@@ -205,6 +214,7 @@ export default function Home() {
       <section className="section-padding bg-brand-light">
         <div className="container-proshoe">
           <div className="text-center mb-16">
+            <div className="section-divider mx-auto"></div>
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
               Nuestras Capacidades
             </h2>
@@ -265,15 +275,17 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img 
-                src={qualityImage} 
-                alt="Control de calidad en PROSHOE" 
-                className="rounded-xl shadow-lg"
+              <img
+                src={qualityImage}
+                alt="Control de calidad en PROSHOE"
+                className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full object-cover"
+                loading="lazy"
               />
-              <img 
-                src={teamImage} 
-                alt="Equipo de artesanos especializados" 
-                className="rounded-xl shadow-lg"
+              <img
+                src={teamImage}
+                alt="Equipo de artesanos especializados"
+                className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full object-cover mt-8"
+                loading="lazy"
               />
             </div>
           </div>
@@ -285,10 +297,11 @@ export default function Home() {
         <div className="container-proshoe">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src={productsImage} 
-                alt="Showcase de productos PROSHOE" 
-                className="rounded-xl shadow-2xl"
+              <img
+                src={productsImage}
+                alt="Showcase de productos PROSHOE"
+                className="rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300 w-full object-cover"
+                loading="lazy"
               />
             </div>
             <div>
